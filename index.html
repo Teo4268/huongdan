@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Tạo Ví MicroBitcoin (MBC)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hướng Dẫn Đào Coin Toàn Tập</h1>
+    </header>
+
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'step1')">Bước 1: Tạo Ví</button>
+            <button class="tab-button" onclick="openTab(event, 'step2')">Bước 2: Đăng Ký Sàn</button>
+            <button class="tab-button" onclick="openTab(event, 'step3')">Bước 3: Cài Tool & Đào Coin</button>
+        </div>
+
+        <div id="step1" class="tab-content" style="display: block;">
+            <section id="intro">
+                <h2>Giới Thiệu Ví MicroBitcoin</h2>
+                <p>MicroBitcoin cho phép bạn chọn ví web tiện lợi nhất, có thể kết nối từ bất kỳ thiết bị nào có trình duyệt. Chúng tôi cũng cung cấp các ứng dụng bổ sung để bạn dễ dàng truy cập từ điện thoại di động. Những chiếc ví này chỉ là bước khởi đầu và các nhà phát triển luôn có thể tự do triển khai các loại ví mới và yêu cầu bổ sung tại đây.</p>
+            </section>
+    
+            <section id="wallets">
+                <h2>Các Loại Ví MicroBitcoin</h2>
+                <div class="wallet-container">
+                    <div class="wallet-card">
+                        <h3>Ví Desktop</h3>
+                        <p>Bản phát hành mới MicroBitcoin v3.2.0 đã được công bố. Phiên bản này dựa trên nền tảng Bitcoin v22.0 mới nhất.</p>
+                        <a href="https://github.com/MicroBitcoinOrg/MicroBitcoin/releases/tag/3.2" target="_blank" class="button">Tải Ví Desktop</a>
+                    </div>
+                    <div class="wallet-card">
+                        <h3>Ví Web</h3>
+                        <p>Một ví MicroBitcoin (MBC) trực tuyến đơn giản. Gửi, nhận và kiểm tra số dư của bạn bằng công cụ online này.</p>
+                        <a href="https://microbitcoinorg.github.io/wallet" target="_blank" class="button">Truy Cập Ví Web</a>
+                    </div>
+                    <div class="wallet-card">
+                        <h3>Ví Android</h3>
+                        <p>Ví MicroBitcoin (MBC) dễ sử dụng cho thiết bị Android của bạn. Gửi, nhận và kiểm tra số dư với ứng dụng này.</p>
+                        <a href="https://wonpay.io/" target="_blank" class="button">Tải Ví Android</a>
+                    </div>
+                    <div class="wallet-card">
+                        <h3>Ví iOS</h3>
+                        <p>Ví MicroBitcoin (MBC) dễ sử dụng cho thiết bị iOS của bạn. Gửi, nhận và kiểm tra số dư với ứng dụng này.</p>
+                        <a href="https://wonpay.io/" target="_blank" class="button">Tải Ví iOS</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="step2" class="tab-content">
+            <section>
+                <h2>Hướng Dẫn Đăng Ký Sàn LBank</h2>
+                <p>Phần này sẽ hướng dẫn chi tiết cách tạo tài khoản trên sàn giao dịch LBank để bắt đầu đào coin.</p>
+                <a href="https://lbank.com/ref/585SA" target="_blank" class="button primary-button">Đăng Ký LBank Ngay</a>
+                <div id="lbank-guide">
+                    <ol>
+                        <li><strong>Truy cập trang đăng ký:</strong> Nhấp vào nút "Đăng Ký LBank Ngay" ở trên để truy cập trang đăng ký chính thức của LBank với mã giới thiệu của chúng tôi.</li>
+                        <li><strong>Nhập thông tin của bạn:</strong> Điền địa chỉ email hoặc số điện thoại của bạn và tạo một mật khẩu an toàn.</li>
+                        <li><strong>Xác minh tài khoản của bạn:</strong> Kiểm tra email hoặc tin nhắn của bạn để lấy mã xác minh và nhập mã đó để hoàn tất quá trình đăng ký.</li>
+                        <li><strong>Bảo mật tài khoản của bạn:</strong> Kích hoạt xác thực hai yếu tố (2FA) để tăng cường bảo mật cho tài khoản của bạn.</li>
+                        <li><strong>Bắt đầu giao dịch:</strong> Sau khi đăng ký và bảo mật tài khoản, bạn đã sẵn sàng để bắt đầu giao dịch và đào coin trên LBank.</li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+
+        <div id="step3" class="tab-content">
+            <section>
+                <h2>Hướng Dẫn Cài Đặt Tool và Bắt Đầu Đào Coin</h2>
+                <p>Để đảm bảo bạn luôn có phiên bản tool mới nhất và có thể tùy chỉnh, hãy làm theo các bước sau để fork repository và chạy tool.</p>
+
+                <div class="os-guide">
+                    <h3>Bước 1: Fork Repository trên GitHub</h3>
+                    <ol>
+                        <li>Truy cập repository gốc tại đây: <a href="https://github.com/teo8764678/tool.git" target="_blank">https://github.com/teo8764678/tool.git</a></li>
+                        <li>Nhấn vào nút "Fork" ở góc trên bên phải của trang GitHub để tạo một bản sao của repository về tài khoản của bạn.</li>
+                        <li>Sau khi fork xong, bạn sẽ được chuyển đến repository của riêng bạn (ví dụ: `https://github.com/TEN_CUA_BAN/tool`).</li>
+                        <li>Sao chép URL của repository đã fork của bạn. URL này sẽ có dạng `https://github.com/TEN_CUA_BAN/tool.git`.</li>
+                    </ol>
+                </div>
+
+                <div class="os-guide">
+                    <h3>Bước 2: Tạo Lệnh Chạy Tool (Linux/macOS)</h3>
+                    <p>Dán URL repository đã fork của bạn vào ô bên dưới để tạo lệnh cài đặt và chạy tool đầy đủ.</p>
+                    <div class="command-generator">
+                        <input type="text" id="repoUrl" placeholder="Dán link repo đã fork của bạn vào đây (ví dụ: https://github.com/user/tool.git)">
+                        <button class="button" onclick="generateCommands()">Tạo Lệnh Demo</button>
+                    </div>
+                    
+                    <p><strong>Lệnh Demo (Nếu bạn đã cài NodeJS):</strong></p>
+                    <pre id="commandOutputNode"><code>Chưa có lệnh nào được tạo.</code></pre>
+                    
+                    <p><strong>Lệnh Demo (Nếu bạn chưa cài NodeJS):</strong></p>
+                    <pre id="commandOutputNoNode"><code>Chưa có lệnh nào được tạo.</code></pre>
+                </div>
+
+                <div class="os-guide">
+                    <h3>Bước 3: Hướng Dẫn Chạy Tool (Windows)</h3>
+                     <ol>
+                        <li><strong>Cài đặt NodeJS:</strong> Nếu chưa có, hãy tải và cài đặt phiên bản LTS từ <a href="https://nodejs.org/" target="_blank">trang web chính thức của NodeJS</a>.</li>
+                        <li><strong>Tải và giải nén Tool:</strong> Tải repository đã fork của bạn dưới dạng file ZIP và giải nén vào một thư mục.</li>
+                        <li><strong>Mở Terminal trong thư mục Tool:</strong> Điều hướng đến thư mục `tool` bạn đã giải nén. Giữ phím `Shift` và nhấp chuột phải vào khoảng trống trong thư mục, sau đó chọn "Open PowerShell window here" hoặc "Mở trong Terminal".</li>
+                        <li><strong>Chạy Tool:</strong> Trong cửa sổ terminal vừa mở, gõ lệnh sau và nhấn Enter:</li>
+                    </ol>
+                    <pre><code>node app.js</code></pre>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>Đây là trang web hướng dẫn được tạo tự động. Thông tin được lấy từ <a href="https://microbitcoin.org/page/wallet">trang web chính thức của MicroBitcoin</a> và LBank.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function generateCommands() {
+            const repoUrl = document.getElementById('repoUrl').value;
+            const outputNode = document.getElementById('commandOutputNode').querySelector('code');
+            const outputNoNode = document.getElementById('commandOutputNoNode').querySelector('code');
+            
+            if (repoUrl && repoUrl.startsWith('https://github.com/') && repoUrl.endsWith('.git')) {
+                const baseCommand = `git clone ${repoUrl} && cd tool`;
+                outputNode.textContent = `${baseCommand} && node app.js`;
+                outputNoNode.textContent = `${baseCommand} && chmod +x node && ./node app.js`;
+            } else {
+                const errorMessage = 'Vui lòng nhập một URL repository GitHub hợp lệ. Ví dụ: https://github.com/ten-cua-ban/tool.git';
+                outputNode.textContent = errorMessage;
+                outputNoNode.textContent = errorMessage;
+            }
+        }
+    </script>
+</body>
+</html>
